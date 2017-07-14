@@ -1,0 +1,57 @@
+/*********************************************************************************************************/
+/**
+ * CSS classes for settings page
+ */
+/*********************************************************************************************************/
+#ic_settings_left {
+	float:left;
+}
+
+#ic_settings_right {
+	width: 40%;
+	float:right;
+	height: 400px;
+	margin-top: 5%;
+}
+
+#data_import_heading {
+	text-align: center;
+}
+
+#ic-import-progress-bar {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#ic-progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+}
+
+#ic-progress-bar-label {
+  text-align: center;
+  line-height: 30px;
+  padding-left: 50px;
+  color: black;
+}
+/*********************************************************************************************************/
+/**
+ * General CSS classes
+ */
+/*********************************************************************************************************/
+.ic-hidden {
+	display:none;
+}
+
+.ic-visible {
+	visibility: visible;
+}
+
+#loading-data-text {
+    padding-top: 15%;
+    padding-left: 15%;
+    position: fixed;
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>{title}</title>
+      {font_tags}
+<style>      
+/*********************************************************************************************************/
+/**
+ * The CSS classes for the verse list numbers
+ */
+/*********************************************************************************************************/
+.persian {
+  list-style-type: persian;
+}
+.amharic {
+  list-style-type: amharic;
+}
+
+.arabic-indic {
+  list-style-type: arabic-indic;
+  font-family:amiri-quran;
+}
+
+.no-numbers {
+  list-style-type: none;
+}
+
+.bengali {
+  list-style-type: bengali;
+  font-family: hind-siliguri;
+}
+
+.sindhi {
+  font-size: 18pt;
+  list-style-type: urdu;
+}
+
+.tamil {
+  font-family: tamil;
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+.lower-norwegian {
+  list-style-type: lower-norwegian;
+}
+
+.malayalam {
+  font-family: malayalam;
+  list-style-type: malayalam;
+}
+
+.somali {
+  list-style-type: somali;
+}
+
+.thai {
+  font-family: thai;
+  list-style-type: thai;
+}
+
+.hindi {
+  font-family: hindi;
+  list-style-type: devanagari;
+}
+
+.decimal {
+  list-style-type: decimal;
+}
+
+.urdu {
+  list-style-type: urdu;
+  font-family: NafeesWeb;
+}
+
+.devehi {
+  font-family: devehi;
+}
+
+.korean {
+  font-family: korean;
+  font-size: 18pt;
+}
+
+/** Firefox specific style */
+@-moz-document url-prefix() {
+  .urdu {
+    list-style-type: -moz-urdu;
+    font-family: NafeesWeb;
+  }
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the verse and hadith sections
+ */
+/*********************************************************************************************************/
+
+.ic-rtl-text {	
+  font-size: 14pt;	
+  direction:rtl;
+  line-height:40px;
+  text-align:right;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+.ic-arabic-text {
+  line-height:50px;
+  font-size: 14pt;	
+  text-align:right;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-family:amiri-quran;
+  margin-left: 40px;
+}
+
+.ic-ltr-text {
+  direction:ltr;
+  text-align:left;
+  word-wrap: break-word;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 0px;
+}
+
+.verse-table {
+  width: 100%;
+}
+
+.verse-table > tbody > tr > td {
+  width: 50%;
+  vertical-align: top;
+}
+
+.verse-table > tbody > tr > td, .verse-table {
+  text-align: right;
+  border: 0;
+  vertical-align: top;
+}
+
+body {
+    padding-right: 15px;
+}
+
+.verse-meta-td-title {
+    font-weight: bold
+}
+
+footer {
+    text-align: center;
+}
+
+.ayat-meta-data {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+h2, #verse-meta {
+  text-align: center;
+}
+
+caption {
+  text-align: left;
+}
+
+#verse-meta, #subscription-meta {
+  text-align: left;
+      margin-left:auto; 
+    margin-right:auto;
+}
+</style>
+   </head>
+   <body>
+   <header>
+     <h2>Holy Quran</h2>
+   </header>
+   <hr/>
+   <table id="verse-meta">
+     <tbody>
+       <tr>
+         <td class="verse-meta-td-title">Narrator</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Sura</td>
+       </tr>
+       <tr>
+         <td>{narrator}</td>
+         <td>&nbsp;</td>         
+         <td>{sura}</td>            
+       </tr>
+       <tr>
+         <td class="verse-meta-td-title">Language</td>      
+         <td>&nbsp;</td>            
+         <td class="verse-meta-td-title">Ayas</td>
+       </tr>
+       <tr>
+         <td>{language}</td>
+         <td>&nbsp;</td>         
+         <td>{start_ayat} - {end_ayat}</td>         
+       </tr>
+     </tbody>
+   </table>
+   <hr/>
+   <article>
+     {body}
+   </article>
+   <hr/>
+   <table id="subscription-meta">
+     <tbody>
+       <tr>
+         <td class="verse-meta-td-title">Keywords</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Times</td>
+       </tr>         
+       <tr>
+         <td class="verse-meta-td-title">{ayat_keywords}</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">{ayat_times}</td>         
+       </tr>
+       <tr>
+         <td class="verse-meta-td-title">Emails</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Order</td> 
+         <td>&nbsp;</td>                 
+       </tr>
+       <tr>
+         <td>{email_addresses}</td>
+         <td>&nbsp;</td>         
+         <td>{ayat_order}</td>
+         <td>&nbsp;</td>         
+       </tr>
+       <tr>
+         <td class="verse-meta-td-title">Count</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Unsubscribe</td>         
+       </tr>
+       <tr>
+         <td>{ayat_count}</td>
+         <td>&nbsp;</td>         
+         <td><a href='{unsubscribe_link}'>Unsubscribe</a></td>         
+       </tr>
+     </tbody>
+   </table>
+   <hr/>
+   <footer>
+       Powered by <a href='http://www.pakjiddat.pk'>Pak Jiddat</a>
+   </footer>
+   </body>
+</html>

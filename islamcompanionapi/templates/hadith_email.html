@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>{title}</title>     
+	<style>
+	h2, footer {
+	  text-align: center;
+	}
+        
+        caption {
+          text-align: left;
+        }
+        
+	#hadith-meta {
+	  text-align: left;
+	      margin-left:auto; 
+    margin-right:auto;
+	}
+	
+	ul.hadith-search-results {
+          padding-left: 0;
+        }
+	</style>
+   </head>
+   <body>
+   <header>
+       <h2>Hadith of Holy Prophet (P.B.U.H)</h2>
+       <hr/>
+   </header>
+   <article>
+     {body}
+   </article>
+   <hr/>
+   <table id="hadith-meta">
+     <tbody>
+       <tr>
+         <td class="verse-meta-td-title">Keywords</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Times</td>
+       </tr>         
+       <tr>
+         <td class="verse-meta-td-title">{hadith_keywords}</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">{hadith_times}</td>         
+       </tr>
+       <tr>
+         <td class="verse-meta-td-title">Emails</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Order</td> 
+         <td>&nbsp;</td>                 
+       </tr>
+       <tr>
+         <td>{email_addresses}</td>
+         <td>&nbsp;</td>         
+         <td>{hadith_order}</td>
+         <td>&nbsp;</td>         
+       </tr>
+       <tr>
+         <td class="verse-meta-td-title">Count</td>
+         <td>&nbsp;</td>         
+         <td class="verse-meta-td-title">Unsubscribe</td>         
+       </tr>
+       <tr>
+         <td>{hadith_count}</td>
+         <td>&nbsp;</td>         
+         <td><a href='{unsubscribe_link}'>Unsubscribe</a></td>         
+       </tr>
+     </tbody>
+   </table>
+   <hr/>
+   <footer>
+       Powered by <a href='http://www.pakjiddat.pk'>Pak Jiddat</a>
+   </footer>
+   </body>
+</html>

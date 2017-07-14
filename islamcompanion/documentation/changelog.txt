@@ -1,0 +1,14 @@
+Changelog:
+
+2.1.0 (5th February, 2016)
+    1) Added short code for displaying Holy Quran verses and audio player on pages and posts
+    2) Added widget for displaying Holy Quran verses and audio player on widget areas
+    
+2.0.2 (30th January, 2016)
+    1) Corrected errors in audio player
+    
+2.0.1 (30th January, 2016)
+    1) Corrected errors in data import process
+    
+2.0.0 (29th January, 2016)
+    1) Initial release 

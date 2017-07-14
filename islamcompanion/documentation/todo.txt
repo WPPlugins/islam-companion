@@ -1,0 +1,46 @@
+To do:
+
+Done:
+
+1) Describe problem with connecting to external servers
+2) Securing wp_insert_post using wp_strip_all_tags. Its used to strip tags from the post title or any other field
+3) Validating data to be saved and data to be displayed
+4) The original arabic text needs to be normalized so it does not give validation errors
+5) Publish changes to WordPress as version 2.0.0
+6) When user installs plugin for first time he should be asked to configure the plugin from settings page
+7) If user is running old version of plugin he should be asked to upgrade the plugin
+8) After user upgrades the plugin his settings options should be cleared
+9) Update error handler so it reports error by posting the error to a url
+
+References:
+
+1) https://codex.wordpress.org/Writing_a_Plugin
+2) https://codex.wordpress.org/Dashboard_Widgets_API
+3) https://codex.wordpress.org/XML-RPC_Extending#Add_Simple_Method
+4) https://chrome.google.com/webstore/detail/xml-rpc-client/mbelaappiaalhoceejaopcghdlnhhain/related?hl=en
+5) http://php.net/manual/en/ref.xmlrpc.php
+6) http://php.net/manual/en/function.http-build-query.php
+7) http://php.net/manual/en/function.curl-setopt.php
+8) http://codex.wordpress.org/Function_Reference/register_post_type
+9) https://codex.wordpress.org/Custom_Fields
+10) https://codex.wordpress.org/Template_Tags/get_posts
+11) https://codex.wordpress.org/Function_Reference/get_post_custom
+12) https://codex.wordpress.org/Function_Reference/add_post_meta
+13) https://codex.wordpress.org/Class_Reference/WP_Error
+14) https://codex.wordpress.org/Template_Tags/get_posts
+15) https://codex.wordpress.org/Class_Reference/WP_Query
+16) http://php.net/manual/en/function.get-object-vars.php
+17) https://codex.wordpress.org/Function_Reference/wp_delete_post
+18) https://codex.wordpress.org/Function_Reference/wp_insert_post
+19) https://codex.wordpress.org/Template_Tags/get_posts
+20) https://codex.wordpress.org/Function_Reference/wp_delete_post
+21) https://codex.wordpress.org/Class_Reference/WP_Query#Custom_Field_Parameters
+22) http://www.w3schools.com/tags/att_global_lang.asp
+23) http://www.w3schools.com/html/html_tables.asp
+24) http://www.w3schools.com/cssref/sel_nth-child.asp
+25) http://php.net/manual/en/class.normalizer.php
+26) https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices
+27) https://codex.wordpress.org/Function_Reference/delete_option
+28) https://developer.wordpress.org/reference/functions/get_plugin_data/
+29) https://codex.wordpress.org/Shortcode_API
+39) https://codex.wordpress.org/Widgets_API

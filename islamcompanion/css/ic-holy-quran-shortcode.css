@@ -1,0 +1,111 @@
+/*********************************************************************************************************/
+/**
+ * The CSS classes for the verse list numbers
+ */
+/*********************************************************************************************************/
+.persian {
+	list-style-type: persian;
+}
+.amharic {
+	list-style-type: amharic;
+}
+
+.arabic-indic {
+	list-style-type: arabic-indic;
+	font-family:amiri-quran;
+}
+
+.no-numbers {
+	list-style-type: none;
+}
+
+.bengali {
+	list-style-type: bengali;
+}
+
+.disc {
+	list-style-type: disc;
+}
+
+.lower-norwegian {
+	list-style-type: lower-norwegian;
+}
+
+.malayalam {
+	list-style-type: malayalam;
+}
+
+.somali {
+	list-style-type: somali;
+}
+
+.thai {
+	list-style-type: thai;
+}
+
+.decimal {
+	list-style-type: decimal;
+}
+
+.urdu {
+	list-style-type: urdu;
+	font-family: NafeesWeb;
+}
+
+
+/** Firefox specific style */
+@-moz-document url-prefix() {
+.urdu {
+	list-style-type: -moz-urdu;
+	font-family: NafeesWeb;
+}
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the Holy Quran shortcode
+ */
+/*********************************************************************************************************/
+.ic-rtl-text {	
+	font-size: 13pt;	
+	direction:rtl;
+	line-height:30px;
+	text-align:right;
+	word-wrap: break-word;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.ic-arabic-text {
+	line-height:50px;
+	font-size: 18pt;	
+	direction:rtl;
+	text-align:right;
+	word-wrap: break-word;
+	font-weight: bold;
+	font-family:trado;	
+	margin-left: 40px;
+}
+
+.ic-ltr-text {
+	direction:ltr;
+	text-align:left;
+	word-wrap: break-word;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.ic-audio-player-rtl {
+	float: right;
+}
+
+.ic-audio-player-ltr {
+	float: left;
+}
+
+.ic-audio-control {
+	padding-right: 5%;
+        vertical-align: top;
+}
+
+
+

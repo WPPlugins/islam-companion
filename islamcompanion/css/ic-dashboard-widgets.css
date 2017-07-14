@@ -1,0 +1,340 @@
+/*********************************************************************************************************/
+/**
+ * The CSS classes for the verse list numbers
+ */
+/*********************************************************************************************************/
+.persian {
+	list-style-type: persian;
+}
+.amharic {
+	list-style-type: amharic;
+}
+
+.arabic-indic {
+	list-style-type: arabic-indic;
+	font-family:amiri-quran;
+}
+
+.no-numbers {
+	list-style-type: none;
+}
+
+.bengali {
+	list-style-type: bengali;
+}
+
+.disc {
+	list-style-type: disc;
+}
+
+.lower-norwegian {
+	list-style-type: lower-norwegian;
+}
+
+.malayalam {
+	list-style-type: malayalam;
+}
+
+.somali {
+	list-style-type: somali;
+}
+
+.thai {
+	list-style-type: thai;
+}
+
+.decimal {
+	list-style-type: decimal;
+}
+
+.urdu {
+	list-style-type: urdu;
+	font-family: NafeesWeb;
+}
+
+
+/** Firefox specific style */
+@-moz-document url-prefix() {
+.urdu {
+	list-style-type: -moz-urdu;
+	font-family: NafeesWeb;
+}
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the top section of the Holy Quran Dashboard Widget
+ * This section contains the division dropdown, sura dropdown, ruku dropdown and ayat number
+ */
+/*********************************************************************************************************/
+.ic-heading {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.division-class {
+	width: 10%;
+}
+
+.sura-class {
+	width: 55%;
+}
+
+.ruku-class {
+	width: 20%;
+}
+
+.ayat-class {
+	width: 15%;
+}
+
+#ic-sura {
+    width: 90%;
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the second section of the Holy Quran Dashboard Widget
+ * This section contains the audio player, navigation buttons, dictionary icon
+ */
+/*********************************************************************************************************/
+.ic-cursor {
+	cursor:pointer;
+}
+
+.section-padding {
+	margin-top: 10px;
+}
+
+.ic-navigator-class-rtl {
+	font-size: 10pt;
+	cursor: pointer;
+	float:right;
+	direction: rtl;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.ic-navigator-class-ltr {
+	font-size: 10pt;
+	cursor: pointer;
+	float:right;
+	direction: ltr;
+	font-weight: bold;
+}
+
+.ic-audio-control {
+	padding-right:20px;
+	width:50%;
+	float:left;
+}
+
+.verse-text-hr {
+	margin-bottom: 15px;
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the third section of the Dashboard Widgets
+ * This section contains the css classes for the verse translation and the original verse text
+ */
+/*********************************************************************************************************/
+
+.ic-rtl-text {	
+	font-size: 14pt;	
+	direction:rtl;
+	line-height:50px;
+	text-align:right;
+	word-wrap: break-word;
+	font-weight: bold;
+	padding-right: 15px;
+}
+
+#text-td > ul {
+        margin-top: 0px;
+}
+
+.ic-arabic-text {
+	line-height:50px;
+	font-size: 14pt;	
+	text-align:right;
+	word-wrap: break-word;
+	font-weight: bold;
+	font-family:amiri-quran;
+}
+
+.ic-ltr-text {
+	direction:ltr;
+	text-align:left;
+	word-wrap: break-word;
+	font-weight: bold;
+	margin-top: 0px;
+	line-height: 30px;
+}
+
+.verse-table > tbody > tr > td {
+	vertical-align: top;
+}
+
+.verse-table > tbody > tr > td:nth-child(1) {
+	width: 60%;
+	padding-right: 30px;
+}
+
+.verse-table > tbody > tr > td, verse-table {
+	text-align: right;
+	    margin-top: -15px;
+	    border: 0;
+}
+
+#ic-holy-quran-more-options-container {
+    width: 100%;
+    font-weight: bold;
+}
+
+.more-options-images {
+    text-align :right;
+    width: 32px;
+}
+
+#ic-quran-dashboard-widget-text > table > tbody > tr > td:nth-child(even),
+#ic-quran-dashboard-widget-text-inner > table > tbody > tr > td:nth-child(even) {
+     line-height:50px;
+     font-size: 14pt;	
+     text-align:right;
+     word-wrap: break-word;
+     font-weight: bold;
+     font-family:amiri-quran;
+     margin-left: 40px;
+     padding-top: 10px;
+}
+
+#ic-quran-settings {
+    display: none;
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the Hadith Dashboard Widget
+ */
+/*********************************************************************************************************/
+#ic-hadith-more-options-container {
+    width: 100%;
+    font-weight: bold;
+}
+
+td.hadith-source-class {
+    width: 60%;
+}
+
+table.hadith-navigation-section-table {
+    width: 100%;
+}
+
+td.hadith-books-class {
+    width: 75%;
+}
+
+#ic-hadith-source {
+    font-weight: bold;
+}
+
+#ic-hadith-settings {
+    display: none;
+}
+
+
+.hadith-search-results {
+    margin-left: 5px;
+}
+
+#ic-hadith-searchbox {
+    width: 100%;
+    font-size: large;
+    font-weight: normal;
+}
+
+#ic-hadith-title {
+    width: 100%;
+}
+
+#ic-hadith-book {
+    width: 90%;
+}
+
+.hadith-search-results-center-heading {
+    font-weight: bold;
+}
+
+.hadith-table > tbody > tr > td > ul > li > div > p {
+    font-weight: bold;
+}
+/*********************************************************************************************************/
+/**
+ * CSS classes for the search results
+ */
+/*********************************************************************************************************/
+.search-results {
+    margin-left: 15px;
+}
+
+.no-search-results {
+  text-align: center;
+}
+
+.highlight-search-keyword {
+    color:green;
+    font-style: italic;
+}
+
+.highlight-word {
+    color:green;
+}
+
+#ic-holy-quran-searchbox {
+    width: 100%;
+    font-size: large;
+    font-weight: normal;
+}
+
+.searchbox-text-rtl {
+    direction: rtl;
+}
+
+.searchbox-text-ltr {
+    direction: ltr;
+}
+
+.search-results-extra-text {
+    font-size: small;
+    text-align: left;
+    cursor: pointer;
+    font-family: sans-serif;
+    direction: ltr;
+    width: 100%;
+}
+
+.holy-quran-search-results-center-heading {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20%;
+}
+
+.prev-search-page {
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.next-search-page {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.search-results-pagination {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.search-page-nav-hidden {
+    visibility: hidden;
+}

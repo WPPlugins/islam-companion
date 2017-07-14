@@ -1,0 +1,36 @@
+<div class="wrap">
+    <div id="ic_settings_left">	
+	    <h2>{heading}</h2>
+	    <form method="post" action="options.php" id="ic_form" class="ic-hidden">			           		
+	        <input type="hidden" name="ic_ajax_nonce" id="ic_ajax_nonce" value="{ajax_nonce}"/>
+	        {form_fields}	    
+	        <input type="submit" name="ic_submit" id="ic_submit" class="button button-primary" value="Save Changes" />
+	        &nbsp;&nbsp;&nbsp;
+	        <input type="button" name="ic_import" id="ic_import" class="{ic_import_classes}" value="{import_button_text}" />
+	    </form>   
+	    <br/>
+	    <br/>
+	    <hr/>
+	    <br/>
+	    <div>{quranic_data_source_text}: <a href='http://tanzil.net/trans/' target='_blank'>tanzil.net</a></div>
+	    <div>{hadith_data_source_text}: <a href='http://hadithcollection.com/' target='_blank'>hadithcollection.com</a></div>
+	    <div>{urdu_fonts_source_text}: <a href="http://www.cle.org.pk/software/localization/Fonts/nafeesWebNaskh.html">http://www.cle.org.pk/software/localization/Fonts/nafeesWebNaskh.html</a></div>	    
+<div>{arabic_fonts_source_text}: <a href="http://www.amirifont.org/">http://www.amirifont.org/</a></div>
+	    <div>{report_bug_text}: <a href='https://wordpress.org/support/plugin/islam-companion' target='_blank'>https://wordpress.org/support/plugin/islam-companion</a></div>
+	    <div>{suggest_feature_text}: <a href='https://wordpress.org/support/plugin/islam-companion' target='_blank'>https://wordpress.org/support/plugin/islam-companion</a></div>
+	    <div>{learn_arabic_text}: <a href='http://www.madinaharabic.com/Arabic_Reading_Course/Lessons/L000_001.html' target='_blank'>http://www.madinaharabic.com/Arabic_Reading_Course/Lessons/L000_001.html</a></div>
+	    <div>{discuss_islam_text}: <a href='https://www.facebook.com/Holyquran.Islam786/' target='_blank'>https://www.facebook.com/Holyquran.Islam786/</a></div>
+	    <br/>
+	    <br/>
+    </div>
+    <div id="ic_settings_right" class="{settings_right_class}">	
+    	<h4 id="data_import_heading">{data_import_heading}</h4>
+    	<div id="ic-import-progress-bar">
+          <div id="ic-progress-bar">
+            <div id="ic-progress-bar-label">0%</div>
+          </div>
+        </div>
+        <h4 id="data_import_status"></h4>
+        <h4 id="data_import_time_remaining"></h4>
+    </div>
+</div>
